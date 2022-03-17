@@ -53,6 +53,7 @@ import (
 	"Mike Krow's Official Best Friend Super Kawaii Kasu Token" |
 	"B ❤ P" |
 	"Aleph.im (Wormhole)" |
+	"Crypto.com Coin (Wormhole)" |
 	"yearn.finance (Wormhole)" |
 	"yearn.finance (Wormhole v1)" |
 	"Bird.Money (Wormhole v1)" |
@@ -115,6 +116,7 @@ import (
 	discord?: #URL
 	medium?: #URL
 	instagram?: #URL
+	tiktok?: #URL
 	reddit?: #URL
 	coinmarketcap?: #URL
 	facebook?: #URL
@@ -141,7 +143,7 @@ import (
 
 	// The checksummed address of the token on the specified chain ID
 	// INCOMPATIBLE: base58
-	address: #Base58Address
+	address: #Base58Address & != "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
 
 	// The number of decimals for the token balance
 	decimals: int & >=0 & <=255
